@@ -10,6 +10,12 @@ This project investigates the use of machine learning and deep learning for the 
 
 The objective is to support dermatologists in early identification of malignant skin lesions to improve treatment outcomes and enable scalable triage in regions with limited access to specialists.
 
+### Deployment Platform and Resources
+
+All models located in the 'Models' folder were trained using the UCloud platform. These include results from training runs performed with large datasets and complex architectures that exceeded local machine capabilities.
+
+The technical setup on UCloud utilized a GPU-based environment, specifically the A100 80GB compute node. This allowed for efficient training of our ViT, EfficientNet, and CNN models over multiple epochs without memory bottlenecks. The environment was configured to run TensorFlow and Keras within a Python 3.11.12 virtual container, ensuring consistency with our dependency stack.
+
 ### Environment Setup
 
 Python Version: **3.11.12**
@@ -72,8 +78,7 @@ wcwidth==0.2.13 Werkzeug==3.1.3 wrapt==1.17.2 xgboost==3.0.1
 
 ### Results
 
-* **Best Overall Model**: Ensemble (F1 = 0.59)
-* **Most Clinically Useful**: ViT (Recall = 0.64 for malignant cases)
+See the hand-in.
 
 ### Other Considerations
 
