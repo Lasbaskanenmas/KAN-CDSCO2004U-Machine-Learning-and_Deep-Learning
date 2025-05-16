@@ -4,7 +4,7 @@
 
 ### Abstract
 
-This project investigates the use of machine learning and deep learning for the classification of malignant skin cancer using dermoscopic images. We implemented four models: a custom Convolutional Neural Network (CNN), a pre-trained EfficientNet with transfer learning, a Vision Transformer (ViT), and an ensemble of Gradient Boosted Trees (GBT) trained on structured metadata. All models were trained on the same dataset of 401,059 images from the ISIC archive, alongside metadata with 55 features. To address the 0.1% class imbalance, data augmentation and class weighting were employed. The ensemble model achieved the highest F1-score of 0.59, while ViT correctly identified 64% of malignant cases, making it the most clinically promising model.
+This project investigates the use of machine learning and deep learning for the classification of malignant skin cancer using dermoscopic images. We implemented four models: a custom Convolutional Neural Network (CNN), a pre-trained EfficientNet with transfer learning, a Vision Transformer (ViT), and an ensemble of Gradient Boosted Trees (GBT) trained on structured metadata. All models were trained on the same dataset of 401,059 images from the ISIC archive, alongside metadata with 55 features. To address the 0.1% class imbalance, data augmentation and class weighting were employed.
 
 ### Project Purpose
 
@@ -75,7 +75,7 @@ wcwidth==0.2.13 Werkzeug==3.1.3 wrapt==1.17.2 xgboost==3.0.1
 * **Best Overall Model**: Ensemble (F1 = 0.59)
 * **Most Clinically Useful**: ViT (Recall = 0.64 for malignant cases)
 
-### Ethical Considerations
+### Other Considerations
 
 We account for overfitting on augmented images, dataset bias, and the real-world implications of false negatives in medical diagnosis models.
 
